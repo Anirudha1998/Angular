@@ -1,0 +1,160 @@
+<div class="row" id="home">
+    <div class="container text-center">
+        <img src="assets/images/Ratnagiri-beach-omg.jpg" alt="HomeImg" style="width: 100%; height: 75vh">
+        <h2 class="centered display-1 col-12 mb-5 pb-5" style="text-shadow: 2px 4px 5px black;">Explore Konkan</h2>
+        <p class="centered mt-5 pt-5 h3 col-12" style="text-shadow: 2px 2px 2px black;">Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Odit, itaque!</p>
+    </div>
+
+</div>
+
+
+<div class="container my-4" id="plans">
+    <div class="row">
+        <div class="col-12">
+            <h2 class="display-2 text-center">Plans</h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="card-group px-5">
+            <!-- Single plan -->
+            <div class="card">
+                <h5 class="card-header text-center fw-bold">Single</h5>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush" *ngFor="let planItems of singlePlanArr">
+                        <li class="list-group-items my-2 mx-3">{{planItems}}</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <a class="btn btn-dark" routerLink="plantrip">Book Now</a>
+                </div>
+            </div>
+
+            <!-- Family plan -->
+            <div class="card ">
+                <h5 class="card-header text-center fw-bold">Family</h5>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush" *ngFor="let planItems of singlePlanArr, familyPlanArr">
+                        <li class="list-group-items my-2 mx-3">{{planItems}}</li>
+                    </ul>
+                    <ul class="list-group list-group-flush" *ngFor="let planItems of familyPlanArr">
+                        <li class="list-group-items my-2 mx-3">{{planItems}}</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-dark" routerLink="plantrip">Book now</button>
+                </div>
+            </div>
+
+            <!-- Group plan -->
+            <div class="card">
+                <h5 class="card-header text-center fw-bold">Group</h5>
+                <div class="card-body">
+                    <ul class="list-group list-group-flush" *ngFor="let planItems of singlePlanArr, familyPlanArr">
+                        <li class="list-group-items my-2 mx-3">{{planItems}}</li>
+                    </ul>
+                    <ul class="list-group list-group-flush" *ngFor="let planItems of familyPlanArr">
+                        <li class="list-group-items my-2 mx-3">{{planItems}}</li>
+                    </ul>
+                    <ul class="list-group list-group-flush" *ngFor="let planItems of groupPlanArr">
+                        <li class="list-group-items my-2 mx-3">{{planItems}}</li>
+                    </ul>
+                </div>
+                <div class="card-footer text-center">
+                    <button class="btn btn-dark"  routerLink="plantrip">Book now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br><br>
+
+<!-- About us -->
+<<<<<<< Updated upstream
+<div class="container-fluid my-4 pb-4" style="background-color: #3b3737;" id="aboutus">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="display-2 text-center text-light">About us</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <p class="h5 text-center text-light"> Less suffering , More Traveling</p>
+                <p class="h5 text-center text-light"> 
+
+                    Our mission at Konkan Tourism is to make affordable travel accessible to more people, to deliver affordable and enjoyable travel experiences that are seamless from end to end. By seamless, we mean hassle-free from the moment you start planning your trip.
+                    
+                    To get to your goal, the Konkan Tourism app helps to make searching and booking with customize travel plan as easy and stress-free as it ought to be.
+                </p>
+            </div>
+        </div>
+
+    </div>
+=======
+<div class="text-center">
+   <p class="fw-bold">About us</p> 
+   <p class="text-start">            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum eaque sapiente accusamus voluptatem obcaecati
+        delectus esse ex aliquam provident iure, officia libero? Possimus adipisci quasi officia mollitia ratione optio
+        tempora vel libero odit nesciunt quibusdam illum nulla, sint laboriosam similique sapiente aperiam perspiciatis
+        soluta provident aliquam? Enim, beatae nesciunt adipisci, error deserunt nihil pariatur, libero fugit sint quae
+        blanditiis. Porro.
+    </p>
+>>>>>>> Stashed changes
+</div>
+
+
+<!-- Contact us form -->
+
+<<<<<<< Updated upstream
+<div class="container my-2 pb-5" >
+    <div class="row" id="contactus">
+      <h1 class="text-center display-2">Contact us</h1>
+    </div>
+    <div class="row">
+      <div class="col d-flex justify-content-center">
+        <form #contactUs="ngForm" (submit)="contactUsForm(contactUs)" class="mx-2 " style="width: 400px; max-width: 550px;">
+          <div class="mb-2">
+            <label for="exampleInputName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="exampleInputName" name="userName" [(ngModel)]="usrName">
+          </div>
+          <div class="mb-2">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="userEmail" [(ngModel)]="usrEmail">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="mb-2">
+            <label for="exampleInputNumber" class="form-label">Contact No.</label>
+            <input type="number" class="form-control" id="exampleInputNumber" name="userContact" [(ngModel)]="usrNum">
+          </div>
+          <div class="mb-2">
+            <label for="exampleMessage" class="form-label">Message.</label>
+            <textarea name="message" id="exampleMessage" class="form-control" style="min-width: 100%"
+              rows="5" [(ngModel)]="usrMsg"></textarea>
+          </div>
+          <button type="submit" class=" btn btn-outline-dark mb-2 float-end ">Submit</button>
+         
+        </form>
+      </div>
+    </div>
+  </div>
+=======
+<div>
+    <form action="mb-3" >
+        <div class="mb-3">
+            <label for="contactusForm"  class="form-lable fw-bold">Name:-</label>
+            <input type="text" class="form-control" id="contactusForm" placeholder="Enter Your Name">
+        </div><br><br>
+        <div class="mb-3">
+            <label for="contactusForm" class="form-label fw-bold">Email address:-</label>
+            <input type="email" class="form-control" id="contactusForm" placeholder="Enter Your Mail id">
+        </div><br><br>
+        <div class="mb-3">
+            <label for="contactusForm" class="form-label fw-bold">Message:-</label>
+            <textarea class="form-control" id="contactusForm" rows="3"></textarea>
+        </div><br>
+        <button class="btn btn-success">Submit</button><br>
+    </form>
+</div>
+>>>>>>> Stashed changes
